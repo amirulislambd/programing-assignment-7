@@ -1,9 +1,11 @@
+import Navbar from '@/components/shared/Navbar/Navbar';
 import React from 'react';
 
-const PublicLayout = () => {
+const PublicLayout = ({children}) => {
     return (
         <div>
-            <h1>Public Layout</h1>
+            <Navbar/>
+            {children}
         </div>
     );
 };
