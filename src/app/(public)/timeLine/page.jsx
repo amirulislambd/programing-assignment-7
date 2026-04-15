@@ -18,7 +18,8 @@ const TimeLinePage = () => {
 
   //   console.log(filterType);
   return friendData.length > 0 ? (
-    <div className="grid gap-2 max-w-7xl mx-auto my-5">
+    <div className="min-h-[541px]">
+      <div className="grid gap-2 max-w-7xl mx-auto py-5">
       <div className="mx-2 lg:mx-0">
         <select
           onChange={(e) => setFilterType(e.target.value)}
@@ -59,12 +60,15 @@ const TimeLinePage = () => {
                     month: "long",
                     day: "numeric",
                     year: "numeric",
+                    hour:'numeric',
+                    minute:'2-digit'
                   })}
                 </p>
               </div>
             </div>
           ))
         : ""}
+    </div>
     </div>
   ) : (
     notFound()

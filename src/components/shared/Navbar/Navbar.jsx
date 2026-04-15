@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=" sticky z-10 shadow-sm py-2 md:py-3 px-2 ">
+    <div className=" sticky top-0 z-10 bg-white shadow-sm py-2 md:py-3 px-2 ">
       <div className="flex items-center justify-between container mx-auto">
       <div>
         <h1 className="bg-gradient-to-r from-green-800 to-green-600 transform bg-clip-text text-transparent text-xl md:text-4xl font-bold ">
