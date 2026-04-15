@@ -18,7 +18,7 @@ const TimeLinePage = () => {
 
   //   console.log(filterType);
   return friendData.length > 0 ? (
-    <div className="min-h-[541px]">
+    <div >
       <div className="grid gap-2 max-w-7xl mx-auto py-5">
       <div className="mx-2 lg:mx-0">
         <select

@@ -5,7 +5,7 @@ const GlobalNotFound = () => {
     return (
         <div className="min-h-[80dvh] flex flex-col items-center justify-center text-center px-5">
             
-            <h1 className="text-9xl font-extrabold text-zinc-200 tracking-widest relative">
+            <h1 className="text-9xl font-extrabold text-zinc-200 tracking-widest relative animate-bounce">
                 404
                 <span className="absolute top-3/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl md:text-4xl text-green-600  px-2 animate-ping">
                     Page Not Found
