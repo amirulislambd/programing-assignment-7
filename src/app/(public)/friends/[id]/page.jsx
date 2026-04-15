@@ -1,3 +1,4 @@
+import CallButtons from "@/components/ui/CallButtons";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import React from "react";
@@ -20,11 +21,11 @@ const FriendDetails = async ({ params }) => {
   if (!friend) {
     notFound();
   }
-  console.log(friend);
+ 
 
   return (
     <div className="grid grid-cols-3 gap-3 max-w-7xl mx-auto my-5 md:my-8">
-      <div className="space-y-5 lg:col-span-1 col-span-3 ">
+      <div className="space-y-5 lg:col-span-1 col-span-3 mx-2 lg:mx-0">
         <div className="border-2 border-zinc-100 rounded-xl p-5 flex flex-col space-y-2 items-center justify-center ">
           <Image
             className="rounded-full hover:border-2 border-green-500 hover:shadow-2xl transition-all duration-500 hover:scale-95"
@@ -74,7 +75,7 @@ const FriendDetails = async ({ params }) => {
           </div>
         </div>
       </div>
-      <div className="space-y-5  md:space-y-8 lg:col-span-2 col-span-3">
+      <div className="space-y-5  md:space-y-8 lg:col-span-2 col-span-3 mx-2 lg:mx-0">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="flex flex-col items-center py-4 md:py-8 lg:py-16 border rounded-md border-zinc-100 shadow-sm">
             <span className="font-bold text-lg md:text-2xl lg:text-4xl">
@@ -106,20 +107,9 @@ const FriendDetails = async ({ params }) => {
         <div className="border border-zinc-200 rounded-md p-2 py-4 md:py-8 px-2 md:px-4   space-y-2">
           <h3 className="font-bold">Quick Check-In</h3>
 
-          <div className="grid grid-cols-3  gap-4">
-            <div className="flex flex-col items-center border border-zinc-200 rounded-md p-2 md:p-5 cursor-pointer transition-all duration-500 hover:scale-105">
-              <FiPhoneCall className="text-xl font-bold" />
-              <p>Call</p>
-            </div>
-            <div className="flex flex-col items-center border border-zinc-200 rounded-md p-2 md:p-5 cursor-pointer transition-all duration-500 hover:scale-105">
-              <PiChatText className="text-xl font-bold" />
-              <p>Text</p>
-            </div>
-            <div className="flex flex-col items-center border border-zinc-200 rounded-md p-2 md:p-5 cursor-pointer transition-all duration-500 hover:scale-105">
-              <PiVideoCameraBold className="text-xl font-bold" />
-              <p>Video</p>
-            </div>
-          </div>
+          <CallButtons friend={friend}/>
+
+         
         </div>
       </div>
     </div>

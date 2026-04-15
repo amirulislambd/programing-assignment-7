@@ -10,7 +10,7 @@ const MenuIcon = ({ navLink }) => {
   const handelClick = () => {
     setOpen(!isOpen);
   };
-//   console.log(isOpen);
+
 
   return (
     <div className="flex flex-row-reverse gap-2">

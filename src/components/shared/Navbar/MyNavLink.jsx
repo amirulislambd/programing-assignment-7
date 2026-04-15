@@ -9,7 +9,7 @@ import { RiTimeLine } from "react-icons/ri";
 
 const MyNavLink = ({href,children}) => {
     const pathName = usePathname()
-    // console.log(pathName)
+  
     return (
         <Link className={`btn btn-sm ${pathName===href? 'bg-green-800 text-white ':''}`} href={href}>{
             href== '/'&& <IoHome />} 
