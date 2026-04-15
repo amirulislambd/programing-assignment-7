@@ -7,22 +7,21 @@ import { toast } from "react-toastify";
 
 const CallButtons = ({ friend }) => {
   const { friendData, setFriendData } = useContext(frContext);
-//   console.log(friendData, setFriendData);
+  //   console.log(friendData, setFriendData);
   // console.log(friend)
 
   const handleCall = (type) => {
     const newEntry = {
       id: Date.now(),
-      friend: friend,
-      type: type,
+      friend,
+      type,
       timestamp: new Date().getTime(),
     };
     setFriendData([...friendData, newEntry]);
-    
-       toast.success(`${newEntry.type} ${newEntry.friend.name}`)
-    
+
+    toast.success(`${newEntry.type} ${newEntry.friend.name}`);
   };
-//   console.log(friendData);
+  //   console.log(friendData);
 
   return (
     <div>

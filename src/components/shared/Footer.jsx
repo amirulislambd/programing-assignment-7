@@ -1,11 +1,30 @@
-import React from 'react';
+import Link from "next/link";
+import React from "react";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
-    return (
-        <div>
-            <h1>Footer</h1>
+  return (
+    <div className="bg-[#244D3F] py-5">
+    <div className="max-w-7xl mx-auto  text-white flex flex-col items-center space-y-3 ">
+    <div className="space-y-2">
+        <h1 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold">KeenKeeper</h1>
+        <p className="text-center text-[10px] md:text-[15px]">
+          Your personal shelf of meaningful connections. Browse, tend, and
+          nurture the relationships that matter most.
+        </p>
+      </div>
+      <div className="text-center space-y-2">
+        <p className="text-[10px] md:text-[15px]"> Social Links</p>
+        <div className="flex gap-2 text-black ">
+          <Link href='' className=" md:text-2xl hover:bg-green-200 bg-white rounded-full p-1 md:p-2"><FaInstagram /> </Link>
+          <Link href='https://www.facebook.com/profile.php' className="md:text-2xl hover:bg-green-200 bg-white rounded-full p-1 md:p-2"><FaFacebook />   </Link>
+          <Link href='https://x.com/amirislambd313' className="md:text-2xl hover:bg-green-200 bg-white rounded-full p-1 md:p-2"><FaXTwitter /> </Link>
         </div>
-    );
+      </div>
+    </div>
+    </div>
+  );
 };
 
-export default Footer; 
+export default Footer;

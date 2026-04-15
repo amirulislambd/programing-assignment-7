@@ -3,6 +3,7 @@ import { frContext } from "@/context/FriendContext";
 import { notFound } from "next/navigation";
 import React, { useContext, useState } from "react";
 import { BiSolidPhoneCall } from "react-icons/bi";
+import { FaVideo } from "react-icons/fa";
 import { PiChatCircleTextLight } from "react-icons/pi";
 
 const TimeLinePage = () => {
@@ -23,7 +24,7 @@ const TimeLinePage = () => {
           onChange={(e) => setFilterType(e.target.value)}
           className="border border-zinc-200 w-full select outline-none max-w-xs p-2 rounded-md"
         >
-          <option value="all">Filter Timeline</option>
+          <option value="all">All</option>
           <option value="audio">Audio Calls</option>
           <option value="video">Video Calls</option>
           <option value="text">Text Messages</option>
@@ -43,7 +44,7 @@ const TimeLinePage = () => {
                 ) : friend.type === "video" ? (
                   <FaVideo className="text-2xl md:text-4xl" />
                 ) : (
-                  ""
+                  notFound()
                 )}
               </div>
               <div>
