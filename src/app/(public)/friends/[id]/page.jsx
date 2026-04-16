@@ -2,7 +2,7 @@ import CallButtons from "@/components/ui/CallButtons";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import React from "react";
-import { FiArchive, FiPhoneCall } from "react-icons/fi";
+import { FiArchive } from "react-icons/fi";
 import { MdNotificationsPaused } from "react-icons/md";
 import { RiDeleteBin6Line } from "react-icons/ri";
 

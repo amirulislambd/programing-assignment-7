@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const FriendCart = ({ friend }) => {
+  
   const { id, name, status, picture, days_since_contact, tags } = friend;
 
   const statusBg = {

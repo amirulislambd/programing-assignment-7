@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'Friends List | KeenKeeper',
-description: 'Manage your connections effectively',
+  title: "Friends List | KeenKeeper",
+  description: "Manage your connections effectively",
 };
 
 export default function RootLayout({ children }) {
@@ -26,12 +26,11 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        
         <Providers>
-        {children}
-        <ToastContainer/>
+          {children}
+          <ToastContainer />
         </Providers>
-        </body>
+      </body>
     </html>
   );
 }

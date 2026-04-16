@@ -11,7 +11,7 @@ const MyNavLink = ({href,children}) => {
     const pathName = usePathname()
   
     return (
-        <Link className={`btn btn-sm ${pathName===href? 'bg-green-800 text-white ':''}`} href={href}>{
+        <Link className={`btn btn-sm w-full md:w-min ${pathName===href? 'bg-green-800 text-white ':''}`} href={href}>{
             href== '/'&& <IoHome />} 
             {href== '/timeLine'&&<RiTimeLine />} {href=='/stats'&&<ImStatsDots />}
              {children}</Link>

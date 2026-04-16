@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://i.ibb.co.com/pBMgGgc3/medme.png" alt="KeenKeeper Banner" width="100%" /> 
 
-## Getting Started
+# 👨‍👩‍👧‍👦 KeenKeeper — Keep Your Friendships Alive
+ **KeenKeeper** is a smart relationship management tool designed to help users track and nurture their connections. It reminds you when it's time to reach out to friends, ensuring no relationship is left behind.
+ 
+ **🚀 Live Demo**
+[**View Live Project**](https://programing-assignment-7.vercel.app/)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ ### 1. 👫 Smart Connection Management
+- **Dashboard Overview:** Displays total friends, connections on track, and those needing urgent attention through summary cards
+- **Dynamic Status Logic:** Automatically categorizes friends as `Overdue`, `Almost Due`, or `On-Track` based on the last contact date and communication goals.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. 👤 Dynamic Friend Details
+A two-column layout providing deep insights into each connection:
+- **Real-time Stats:** Track days since last contact and upcoming due dates.
+- **Quick Check-In:** Instantly log interactions (Call, Text, or Video).
+- **Interactive Actions:** Professional buttons for Snoozing, Archiving, or Deleting connections.
 
-## Learn More
+### 3. 📜 Interaction Timeline
+A dedicated history page that logs every call, text, or video session.
+- Automatically updates when a check-in is performed.
+- Filterable history to track specific types of communication.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. 📊 Friendship Analytics
+A visual **Pie Chart** powered by Recharts on the Stats page, showing the distribution of your communication methods (Call vs. Text vs. Video).
