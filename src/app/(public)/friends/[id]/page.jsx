@@ -4,8 +4,37 @@ import { notFound } from "next/navigation";
 import React from "react";
 import { FiArchive, FiPhoneCall } from "react-icons/fi";
 import { MdNotificationsPaused } from "react-icons/md";
-
 import { RiDeleteBin6Line } from "react-icons/ri";
+
+export async function generateMetadata({params}) {
+  const {id}=await params;
+  const friends = await PromiseData() 
+  const friend = friends.find(f=> f.id ==id)
+  console.log(params)
+  if(!friend){
+    return{
+      title:"Friend Not Found | KeenKeeper"
+    }
+  }
+  return{
+    title:`${friend.name} | Details`,
+    description:friend.bio || `View connection details for ${friend.name}`,
+    icons:{
+      icon: friend.picture,
+      shortcut:friend.picture,
+      apple:friend.picture,
+    },
+    images: [
+      {
+        url: friend.picture,
+        width: 800,
+        height: 800,
+      },
+    ],
+  }
+
+}
+
 
 const PromiseData = async () => {
   const res = await fetch(
