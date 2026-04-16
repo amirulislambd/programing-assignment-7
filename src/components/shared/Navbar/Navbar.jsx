@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className=" sticky top-0 z-10 bg-white shadow-sm py-2 md:py-4 px-2 ">
       <div className="flex items-center justify-between container mx-auto">
       <div>
-        <h1 className="text-xl md:text-4xl font-bold ">
+        <h1 className="text-xl md:text-4xl font-bold flex">
           <span className="text-green-900">Keen</span>
           <span className="text-green-700">Keeper</span>
           
