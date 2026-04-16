@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import React from "react";
 import { FiArchive, FiPhoneCall } from "react-icons/fi";
 import { MdNotificationsPaused } from "react-icons/md";
-import { PiChatText, PiVideoCameraBold } from "react-icons/pi";
+
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const PromiseData = async () => {
