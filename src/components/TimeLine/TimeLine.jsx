@@ -45,7 +45,7 @@ const TimeLine = () => {
                 name="search"
                 id=""
                 placeholder="search your friend"
-                className="border border-zinc-200 p-2 rounded-md outline-none w-full"
+                className="border border-zinc-200 p-2 rounded-md outline-none w-full lowercase"
               />
             </div>
           </div>
